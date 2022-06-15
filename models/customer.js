@@ -83,6 +83,27 @@ class Customer {
       );
     }
   }
+
+    /**getting/setting notes  */
+
+    set notes(val) {
+      this._notes = val || "";
+    }
+  
+    get notes() {
+      return this._notes;
+    }
+  
+    /**  getting/setting phone #. */
+  
+    set phone(val) {
+      this._phone = val || null;
+    }
+  
+    get phone() {
+      return this._phone;
+    }
+
 }
 
 module.exports = Customer;
